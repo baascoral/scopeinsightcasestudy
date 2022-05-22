@@ -1,5 +1,9 @@
-Select n_length,
-split_part(cast (n_length as varchar(255)),'.', 1) as m,  
-split_part(cast (n_length as varchar(255)),'.', 2) as cm
-
-from public.q2
+select 
+	n_length,
+	floor(n_length) as m,
+	cast ((n_length - floor(n_length)) * 
+	case 
+	    WHEN n_length < 10 THEN 100
+	    WHEN n_length > 10 THEN 1000
+	 end as int ) as cm
+from q2
