@@ -1,0 +1,6 @@
+Select 
+first_name, 
+amount
+from public.employee as e
+join public.reward as rw on e.employee_id = rw.employee_ref_id
+where amount >= 2000;

@@ -1,0 +1,9 @@
+select 
+	n_length,
+	floor(n_length) as m,
+	cast ((n_length - floor(n_length)) * 
+	case 
+	    WHEN n_length < 10 THEN 100
+	    WHEN n_length > 10 THEN 1000
+	 end as int ) as cm
+from q2

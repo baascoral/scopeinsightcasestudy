@@ -1,0 +1,5 @@
+Update public.reward
+set amount = 1000
+where Employee_ref_id = 1;
+
+--Select * from public.reward

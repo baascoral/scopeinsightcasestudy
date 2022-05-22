@@ -1,0 +1,8 @@
+Select ROUND (AL."Bolivia") as "[Bolivia Alpacas]",
+ROUND(LL."Bolivia") as "[Bolivia LLamas]",
+ROUND(OV."Bolivia") as "[Bolivia Ovejas]",
+AL."AÑO"
+from ine."BOLIVIA_PRODUCCION_DE_FIBRA_DE_ALPACA" AS AL
+join ine."BOLIVIA_PRODUCCION_DE_FIBRA_DE_LLAMA" AS LL on  AL."AÑO" = LL."AÑO"
+join ine."BOLIVIA_PRODUCCION_DE_LANA_DE_OVINO" AS OV on LL."AÑO" = OV."AÑO"
+

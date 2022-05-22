@@ -1,0 +1,6 @@
+Select 
+
+SUM(CASE WHEN A > 0 THEN A END) as Sum_positive,
+SUM(CASE WHEN A < 0 THEN A END) as Sum_negative
+
+from public.x

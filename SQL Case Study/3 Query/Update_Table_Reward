@@ -1,0 +1,4 @@
+update public.reward
+set
+amount = 1000
+where employee_ref_id = 1;

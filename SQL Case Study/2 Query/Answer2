@@ -1,0 +1,5 @@
+Select n_length,
+split_part(cast (n_length as varchar(255)),'.', 1) as m,  
+split_part(cast (n_length as varchar(255)),'.', 2) as cm
+
+from public.q2

@@ -1,0 +1,17 @@
+Create table Employee (
+Employee_id integer primary key ,
+First_name varchar(255), 
+Last_name varchar (255), 
+Salary integer, 
+joining_date date,
+Departtement varchar(255)
+);
+insert into Employee (Employee_id, First_name, Last_name, Salary, joining_date, Departtement)
+values 
+(1, 'Bob', 'Kinto', 1000000, '2019-01-20', 'Finance'),
+(2, 'Jerry', 'Kansxo', 6000000, '2019-01-15', 'IT'),
+(3, 'Philip', 'Jose', 8900000, '2019-02-05', 'Banking'),
+(4, 'John', 'Abraham', 2000000, '2019-02-25', 'Insurance'),
+(5, 'Michael', 'Mathew', 2200000, '2019-02-28', 'Finance'),
+(6, 'Alex', 'chreketo', 4000000, '2019-05-10', 'IT'),
+(7, 'Yohan', 'Soso', 1230000, '2019-06-20', 'Banking');

@@ -1,0 +1,9 @@
+Drop table X;
+Create table X
+(A integer);
+
+INSERT INTO X (A) values (2),(-2),(4),(-4),(-3),(0),(2);
+
+Select * from X
+
+

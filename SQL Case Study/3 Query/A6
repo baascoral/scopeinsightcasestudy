@@ -1,0 +1,9 @@
+Select 
+first_name, 
+
+case 
+    when amount is null then 0
+	else amount
+end	
+from public.employee as e
+left outer join public.reward as rw on e.employee_id = rw.employee_ref_id;

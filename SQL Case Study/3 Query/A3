@@ -1,0 +1,8 @@
+--Select salary*0.35 from public.employee
+--where first_name = 'Bob';
+
+-- Select salary*0.50 from public.employee
+-- where first_name = 'Alex';
+
+Select First_name, salary*0.25 from public.employee
+where first_name not in ('Bob','Alex');

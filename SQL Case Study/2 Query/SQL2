@@ -1,0 +1,7 @@
+Drop table Q2;
+Create table Q2
+(n_Length numeric);
+
+INSERT INTO Q2 (n_Length) values (5.67),(34.567),(365.253),(34);
+
+Select * from Q2
